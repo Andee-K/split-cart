@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@plugin '../hero.ts';
+/* Note: `app` is one level deep; the workspace root is `../` from here. */
+@source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
 
 :root {
   --background: #ffffff;
