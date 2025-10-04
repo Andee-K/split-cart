@@ -4,6 +4,12 @@
 @source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
 @custom-variant dark (&:is(.dark *));
 
+* {
+  outline: 1px dashed red !important;
+  color: black;
+  background-color: white;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
