@@ -3,7 +3,7 @@ import { Card, CardBody, CardFooter, Image } from "@heroui/react";
 
 const GroupCard = ({ name }: { name: string }) => {
   return (
-    <Card className="max-w-[300px] w-full mx-auto" isPressable onPress={() => console.log("Path to group page")}>
+    <Card className="max-w-[300px] w-full mx-auto">
       <CardBody>
         <Image
           src="/cart_image_test.jpeg"

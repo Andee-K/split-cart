@@ -6,6 +6,7 @@ import MdiAccountPlus from "../icons/MdiAccountPlus";
 import MdiAccountMultiplePlus from "../icons/MdiAccountMultiplePlus";
 import { Button, useDisclosure } from "@heroui/react";
 import GroupModal from "./GroupModal";
+import Link from "next/link";
 
 const GroupList = ({ groups }: { groups: Group[] }) => {
   const {
@@ -46,7 +47,9 @@ const GroupList = ({ groups }: { groups: Group[] }) => {
       <ul className="grid md:grid-cols-2 lg:grid-cols-3">
         {groups.map((group) => (
           <li key={group.id}>
-            <GroupCard name={group.name} />
+            <Link href={`/dashboard/group/${group.id}`}>
+              <GroupCard name={group.name} />
+            </Link>
           </li>
         ))}
       </ul>
